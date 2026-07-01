@@ -59,11 +59,9 @@ Security Alerts and Investigation Workflow
 | 3 | AWS API AccessDenied Activity | Medium | 43 | Detects AWS API calls that fail because of permission issues. |
 | 4 | Root Account Activity | High | 83 | Detects activity performed by the AWS root account. |
 | 5 | AWS Console Login Failure | Medium | 31 | Detects failed AWS console login attempts. |
-| 6 | S3 Bucket Public Access or Policy Changed | High | 67 | Detects S3 public access or bucket policy changes. |
-| 7 | Console Login Without MFA | Critical | 99 | Detects successful console login where MFA was not used. |
-| 8 | Multiple Failed Console Logins | High | 59 | Detects repeated AWS console login failures. |
-| 9 | IAM Access Key Updated or Deleted | Medium | 47 | Detects IAM access key update or deletion activity. |
-| 10 | S3 Bucket Versioning Changed | Medium | 61 | Detects changes to S3 bucket versioning. |
+| 6 | Console Login Without MFA | Critical | 99 | Detects successful console login where MFA was not used. |
+| 7 | IAM Access Key Updated or Deleted | Medium | 47 | Detects IAM access key update or deletion activity. |
+| 8 | S3 Bucket Versioning Changed | Medium | 61 | Detects changes to S3 bucket versioning. |
 
 ## Repository Structure
 
@@ -84,8 +82,6 @@ cloudtrail-elastic-detection-pipeline/
 │   ├── root_account_activity.md
 │   ├── console_login_failure.md
 │   ├── console_login_without_mfa.md
-│   ├── multiple_failed_console_logins.md
-│   ├── s3_public_access_policy_changed.md
 │   ├── iam_access_key_updated_or_deleted.md
 │   └── s3_bucket_versioning_changed.md
 ├── test-evidence/
