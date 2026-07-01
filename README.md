@@ -128,20 +128,6 @@ Testing process:
 6. Capture screenshots of the raw event, generated alert, and rule status.
 7. Clean up temporary AWS resources.
 
-## Example Test Evidence Format
-
-```text
-Rule Name:
-Test Date:
-AWS Account:
-Test User / Role:
-Test Action:
-Expected CloudTrail Event:
-Elastic Query Used:
-Alert Generated:
-Screenshot:
-Result:
-Notes:
 ```
 
 ## Project Outcome
