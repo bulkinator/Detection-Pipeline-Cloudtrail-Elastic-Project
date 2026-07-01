@@ -49,7 +49,7 @@ AccessDenied Spike by Same Identity
 
 ## 7. Evidence
 
-![Evidence Screenshot](./detections/Screenshots/acde.png)
+![Evidence Screenshot](../Screenshots/acde.png)
 
 ## 8. Fields to Review
 
