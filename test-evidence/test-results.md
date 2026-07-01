@@ -46,10 +46,15 @@ data_stream.dataset:"aws.cloudtrail"
 
 ![S3 Public Access Alert](../Screenshots/cloudtrail.png)
 
+![IAM user](../Screenshots/admin.png)
+
+![IAM user](../Screenshots/elasticreader.png)
+
+
 ## 5. Final Result
 
 ```text
-All 10 AWS CloudTrail detection rules were created and enabled in Elastic Security.
+All 8 AWS CloudTrail detection rules were created and enabled in Elastic Security.
 
 CloudTrail logs were successfully ingested into Elastic using the AWS integration.
 
@@ -57,5 +62,4 @@ Test events were generated in the AWS lab account and reviewed in Elastic Discov
 
 Alerts were generated successfully for the tested detection scenarios.
 
-Final Status: To update after all screenshots are added.
 ```
