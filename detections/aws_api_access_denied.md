@@ -16,7 +16,11 @@ Status: Enabled
 ## 2. Detection Logic
 
 ```kql
-data_stream.dataset:"aws.cloudtrail" and aws.cloudtrail.error_code:*AccessDenied*
+data_stream.dataset : "aws.cloudtrail" and
+(
+  aws.cloudtrail.error_code : ("AccessDenied" or "AccessDeniedException" or "UnauthorizedOperation" or "Client.UnauthorizedOperation")
+  or error.code : ("AccessDenied" or "AccessDeniedException" or "UnauthorizedOperation" or "Client.UnauthorizedOperation")
+)
 ```
 
 ## 3. CloudTrail Events
