@@ -23,19 +23,18 @@ data_stream.dataset:"aws.cloudtrail"
 
 ## 3. Test Summary
 
+## 3. Test Summary
+
 | # | Rule | Test Action | Expected Event | Alert Result |
 |---|---|---|---|---|
-| 1 | AWS CloudTrail Logging Disabled or Modified | Update or stop/start CloudTrail | UpdateTrail / StopLogging | To update |
-| 2 | AccessDenied Spike by Same Identity | Run repeated denied API calls | AccessDenied | To update |
-| 3 | AWS API AccessDenied Activity | Run one denied API call | AccessDenied | To update |
-| 4 | Root Account Activity | Sign in as root | ConsoleLogin / Root | To update |
-| 5 | AWS Console Login Failure | Attempt wrong password | ConsoleLogin Failure | To update |
-| 6 | S3 Bucket Public Access or Policy Changed | Modify bucket public access block | PutPublicAccessBlock | To update |
-| 7 | Console Login Without MFA | Login without MFA | ConsoleLogin / MFAUsed No | To update |
-| 8 | Multiple Failed Console Logins | Fail login several times | ConsoleLogin Failure | To update |
-| 9 | IAM Access Key Updated or Deleted | Disable or delete test key | UpdateAccessKey / DeleteAccessKey | To update |
-| 10 | S3 Bucket Versioning Changed | Enable or suspend versioning | PutBucketVersioning | To update |
-
+| 1 | AWS CloudTrail Logging Disabled or Modified | Update or stop/start CloudTrail | UpdateTrail / StopLogging | Alert generated successfully |
+| 2 | AccessDenied Spike by Same Identity | Run repeated denied API calls | AccessDenied | Alert generated after threshold reached |
+| 3 | AWS API AccessDenied Activity | Run one denied API call | AccessDenied | Alert generated successfully |
+| 4 | Root Account Activity | Sign in as root | ConsoleLogin / Root | High severity alert generated |
+| 5 | AWS Console Login Failure | Attempt wrong password | ConsoleLogin Failure | Alert generated successfully |
+| 6 | Console Login Without MFA | Login without MFA | ConsoleLogin / MFAUsed No | Critical alert generated |
+| 7 | IAM Access Key Updated or Deleted | Disable or delete test key | UpdateAccessKey / DeleteAccessKey | Alert generated successfully |
+| 8 | S3 Bucket Versioning Changed | Enable or suspend versioning | PutBucketVersioning | Alert generated successfully |
 ## 4. Evidence Screenshots
 
 ![Rules Enabled](../Screenshots/allrules.png)
