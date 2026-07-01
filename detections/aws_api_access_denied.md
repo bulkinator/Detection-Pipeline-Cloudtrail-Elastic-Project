@@ -49,8 +49,6 @@ AWS API AccessDenied Activity
 
 ## 7. Evidence
 
-Add screenshots after testing.
-
 ![Evidence Screenshot](../Screenshots/apideniedaccess.png)
 
 ## 8. Fields to Review
