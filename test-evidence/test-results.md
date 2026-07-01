@@ -10,9 +10,8 @@ AWS Region: ap-southeast-2
 Elastic Dataset: aws.cloudtrail
 CloudTrail Source: S3 bucket with .gz CloudTrail logs
 Ingestion Method: Elastic AWS integration using S3/SQS
-Tester: To update
-Test Date: To update
-AWS Account ID: To update
+Test Date: 1/07/2026
+AWS Account ID: 030157668755
 ```
 
 ## 2. Main Elastic Query
