@@ -16,7 +16,10 @@ Status: Enabled
 ## 2. Detection Logic
 
 ```kql
-data_stream.dataset:"aws.cloudtrail" and event.provider:"signin.amazonaws.com" and event.action:"ConsoleLogin" and aws.cloudtrail.additional_eventdata.MFAUsed:"No"
+data_stream.dataset : "aws.cloudtrail" and
+event.action : "ConsoleLogin" and
+event.outcome : "success" and
+aws.cloudtrail.console_login.additional_eventdata.mfa_used : false
 ```
 
 ## 3. CloudTrail Events
