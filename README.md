@@ -75,6 +75,7 @@ cloudtrail-elastic-detection-pipeline/
 │   ├── alert-console-login-failure.png
 │   ├── alert-s3-public-access.png
 │   └── alert-versioning-changed.png
+|   └── more....
 ├── detections/
 │   ├── aws_api_access_denied.md
 │   ├── access_denied_spike.md
