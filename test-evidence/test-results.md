@@ -38,17 +38,13 @@ data_stream.dataset:"aws.cloudtrail"
 
 ## 4. Evidence Screenshots
 
-![Rules Enabled](../screenshots/rules-enabled.png)
+![Rules Enabled](../Screenshots/allrules.png)
 
-![CloudTrail Events in Discover](../screenshots/discover-cloudtrail-events.png)
+![CloudTrail Events in Discover](../Screenshots/agenthealthy.png)
 
-![AccessDenied Alert](../screenshots/alert-accessdenied.png)
+![Console Login Failure Alert](../Screenshots/cloudtraillogss3.png)
 
-![Console Login Failure Alert](../screenshots/alert-console-login-failure.png)
-
-![S3 Public Access Alert](../screenshots/alert-s3-public-access.png)
-
-![S3 Versioning Alert](../screenshots/alert-versioning-changed.png)
+![S3 Public Access Alert](../Screenshots/cloudtrail.png)
 
 ## 5. Final Result
 
