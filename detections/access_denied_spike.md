@@ -38,7 +38,11 @@ Run several denied AWS CLI commands within a short time window.
 The AWS action should appear in Elastic Discover under:
 
 ```kql
-data_stream.dataset:"aws.cloudtrail"
+data_stream.dataset : "aws.cloudtrail" and
+(
+  aws.cloudtrail.error_code : ("AccessDenied" or "AccessDeniedException" or "UnauthorizedOperation" or "Client.UnauthorizedOperation")
+  or error.code : ("AccessDenied" or "AccessDeniedException" or "UnauthorizedOperation" or "Client.UnauthorizedOperation")
+)
 ```
 
 The rule should generate an Elastic Security alert for:
