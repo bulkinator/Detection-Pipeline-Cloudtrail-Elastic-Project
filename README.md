@@ -40,6 +40,7 @@ Elastic Security Detection Rules
   v
 Security Alerts and Investigation Workflow
 ```
+![Diagram](Detection-Pipeline-Cloudtrail-Elastic-Project/Screenshots/Architecture.png)
 
 ## Data Source
 
