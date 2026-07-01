@@ -16,7 +16,8 @@ Status: Enabled
 ## 2. Detection Logic
 
 ```kql
-data_stream.dataset:"aws.cloudtrail" and event.provider:"iam.amazonaws.com" and event.action:("UpdateAccessKey" or "DeleteAccessKey")
+data_stream.dataset : "aws.cloudtrail" and
+event.action : ("UpdateAccessKey" or "DeleteAccessKey")
 ```
 
 ## 3. CloudTrail Events
