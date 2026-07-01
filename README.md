@@ -114,6 +114,9 @@ aws.cloudtrail.error_code
 aws.cloudtrail.error_message
 aws.cloudtrail.request_parameters
 ```
+## Discover Dashboard of Elastic Security
+
+![discover](Screenshots/discover.png)
 
 ## Testing Methodology
 
