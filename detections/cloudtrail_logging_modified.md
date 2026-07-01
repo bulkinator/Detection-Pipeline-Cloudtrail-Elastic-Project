@@ -16,7 +16,7 @@ Status: Enabled
 ## 2. Detection Logic
 
 ```kql
-data_stream.dataset:"aws.cloudtrail" and event.provider:"cloudtrail.amazonaws.com" and event.action:("StopLogging" or "DeleteTrail" or "UpdateTrail" or "PutEventSelectors")
+data_stream.dataset : "aws.cloudtrail" and event.action : (StopLogging or DeleteTrail or UpdateTrail or PutEventSelectors)
 ```
 
 ## 3. CloudTrail Events
