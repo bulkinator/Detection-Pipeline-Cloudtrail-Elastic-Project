@@ -98,11 +98,4 @@ Common false positives include:
 5. Preserve screenshots and evidence.
 6. Escalate if the activity involved root, IAM, S3, CloudTrail, KMS, or Organizations.
 
-## 12. Test Result
 
-```text
-Status: To update
-Alert Generated: To update
-Screenshot Added: To update
-Notes: To update
-```
