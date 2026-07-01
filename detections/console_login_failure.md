@@ -49,7 +49,6 @@ AWS Console Login Failure
 
 ## 7. Evidence
 
-Add screenshots after testing.
 
 ![Evidence Screenshot](../Screenshots/consoleloginfail.png)
 
