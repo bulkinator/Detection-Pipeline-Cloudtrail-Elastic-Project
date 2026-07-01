@@ -49,9 +49,7 @@ Root Account Activity
 
 ## 7. Evidence
 
-Add screenshots after testing.
-
-![Evidence Screenshot](../screenshots/rules-enabled.png)
+![Evidence Screenshot](../Screenshots/rootactivity.png)
 
 ## 8. Fields to Review
 
