@@ -132,12 +132,12 @@ Testing process:
 6. Capture screenshots of the raw event, generated alert, and rule status.
 7. Clean up temporary AWS resources.
 
-```
 
 ## Project Outcome
 
 The project successfully demonstrates how AWS CloudTrail events can be collected, monitored, and converted into actionable security alerts using Elastic Security. The detections cover common cloud security scenarios such as unauthorized access attempts, root account usage, console authentication issues, S3 exposure risks, IAM key changes, and CloudTrail tampering.
 
+```
 ## Limitations
 
 - Detection accuracy depends on CloudTrail coverage and Elastic ingestion health.
@@ -146,6 +146,7 @@ The project successfully demonstrates how AWS CloudTrail events can be collected
 - Field names may vary depending on Elastic integration version and AWS integration configuration.
 - Some actions may take several minutes to appear in Elastic because CloudTrail delivery is not instant.
 
+```
 ## Future Improvements
 
 - Add EventBridge or SNS alerting for critical detections.
@@ -155,3 +156,5 @@ The project successfully demonstrates how AWS CloudTrail events can be collected
 - Add AWS Config rules for configuration compliance.
 - Add dashboards for AWS security monitoring.
 - Add Terraform code for repeatable deployment.
+
+
